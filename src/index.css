@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html.light {
+    color-scheme: light;
+  }
+
+  * {
+    @apply border-obsidian-border;
+  }
+
+  html {
+    scrollbar-gutter: stable;
+  }
+
+  body {
+    @apply bg-obsidian text-ivory transition-colors duration-500;
+  }
+
+  html.light body {
+    @apply bg-pearl text-obsidian;
+  }
+
+  ::selection {
+    background-color: rgba(18, 184, 134, 0.35);
+    color: #f3f1ea;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #07090a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #12b886, #0a6e4f);
+    border-radius: 999px;
+    border: 2px solid #07090a;
+  }
+  html.light ::-webkit-scrollbar-track {
+    background: #f6f5f0;
+  }
+
+  /* Visible keyboard focus everywhere */
+  a:focus-visible,
+  button:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid #12b886;
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply relative border border-white/10 bg-white/[0.03] backdrop-blur-xl;
+  }
+
+  html.light .glass-panel {
+    @apply border-black/5 bg-white/70;
+  }
+
+  .glass-card {
+    @apply glass-panel rounded-2xl shadow-glass transition-all duration-500;
+  }
+
+  .heading-eyebrow {
+    @apply font-mono text-xs uppercase tracking-[0.35em] text-emerald-glow;
+  }
+
+  .section-padding {
+    @apply px-6 sm:px-10 lg:px-20 xl:px-32;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-emerald-glow via-emerald to-gold bg-clip-text text-transparent;
+  }
+
+  .btn-primary {
+    @apply relative inline-flex items-center gap-2 rounded-full bg-emerald px-6 py-3 font-mono text-sm font-medium text-obsidian shadow-glow transition-all duration-300 hover:bg-emerald-glow hover:shadow-[0_0_55px_rgba(52,211,153,0.45)] active:scale-95;
+  }
+
+  .btn-ghost {
+    @apply relative inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.02] px-6 py-3 font-mono text-sm font-medium text-ivory backdrop-blur-md transition-all duration-300 hover:border-emerald/60 hover:text-emerald-glow active:scale-95;
+  }
+
+  html.light .btn-ghost {
+    @apply border-black/10 text-obsidian hover:border-emerald;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
