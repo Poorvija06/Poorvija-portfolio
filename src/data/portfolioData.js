@@ -9,7 +9,7 @@ export const profile = {
   firstName: 'Poorvija',
   initials: 'PD',
   title: 'Front-End Developer',
-  subtitle: 'B.E. Computer Science Engineering — Pre-Final Year',
+  subtitle: 'B.E. Computer Science Engineering —Final Year',
   location: 'Tiruchirappalli, Tamil Nadu, India',
   email: 'poorvija@gmail.com',
   github: 'https://github.com/Poorvija06',
@@ -17,7 +17,7 @@ export const profile = {
   photo: '/images/Poorvija.jpg',
   tagline: 'I build interfaces that feel as good as they look.',
   bio: [
-    "I'm a pre-final year Computer Science Engineering student who fell in love with the front end — the exact point where logic meets feeling. My days go into React components, Tailwind utility classes, and just enough JavaScript to make things move the way I imagine them.",
+    "I'm a Final year Computer Science Engineering student who fell in love with the front end — the exact point where logic meets feeling. My days go into React components, Tailwind utility classes, and just enough JavaScript to make things move the way I imagine them.",
     "Alongside coursework, I've spent this year in internships that stretched me across full-stack development, AI-powered analytics, and UI/UX — proof that I'd rather learn by shipping than by watching.",
   ],
   resumeUrl: '/resume/Poorvija_Dhanusri_Resume.pdf',
@@ -114,7 +114,7 @@ export const journey = [
     period: 'Sep 2023 — May 2027',
     location: 'Tiruchirappalli, Tamil Nadu',
     description:
-      'Currently in pre-final year, maintaining a Grade A average while building a front-end specialization through internships and self-driven projects.',
+      'Currently in Final year, maintaining a Grade A average while building a front-end specialization through internships and self-driven projects.',
     tags: ['CGPA: 8.24', 'Computer Science'],
   },
   {
