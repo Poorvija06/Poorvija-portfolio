@@ -20,7 +20,7 @@ export const profile = {
     "I'm a Final year Computer Science Engineering student who fell in love with the front end — the exact point where logic meets feeling. My days go into React components, Tailwind utility classes, and just enough JavaScript to make things move the way I imagine them.",
     "Alongside coursework, I've spent this year in internships that stretched me across full-stack development, AI-powered analytics, and UI/UX — proof that I'd rather learn by shipping than by watching.",
   ],
-  resumeUrl: '/resume/Poorvija_Dhanusri_Resume.pdf',
+  resumeUrl: '/resume/Poorvija_Dhanusri_Resume final.pdf',
   availability: 'Open to Front-End & Full-Stack Internships',
 }
 
